@@ -1,12 +1,12 @@
 package tv.mapper.embellishcraft_bop.util;
 
 import biomesoplenty.api.block.BOPBlocks;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
-import net.minecraftforge.common.Tags.IOptionalNamedTag;
 import tv.mapper.embellishcraft.core.util.WoodsType;
 import tv.mapper.embellishcraft_bop.init.ECBoPBlocks;
 
@@ -88,7 +88,7 @@ public class ECBoPBlockUtils
         }
     }
 
-    public static IOptionalNamedTag<Item> getDyeTagFromColor(DyeColor color)
+    public static TagKey<Item> getDyeTagFromColor(DyeColor color)
     {
         switch(color)
         {
